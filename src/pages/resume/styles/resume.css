@@ -1,0 +1,101 @@
+/*ABOUT ME*/
+.aboutme_text {
+    color: darkslategray !important;
+    font-size: smaller !important;
+    line-height: 22px !important;
+    white-space: pre-line !important;
+}
+/*END ABOUT ME*/
+
+/*END TIMELINE*/
+
+.timeline .timeline_content .timeline_title {
+    font-size: 16px !important;
+    font-weight: 600 !important;
+}
+
+.timeline .timeline_content .timeline_date {
+    color: darkslategray;
+}
+
+.timeline .timeline_content .timeline_description {
+    color: gray;
+    font-size: small;
+    margin-top: 6px;
+}
+/*END TIMELINE*/
+
+/*SERVICES*/
+
+.service {
+    height: 100%;
+    text-align: center;
+}
+
+.service .service_title {
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    line-height: 35px !important;
+    text-align: center;
+    
+}
+
+.service .service_description {
+    color: #989898 !important;
+    border-color: var(--main-color) !important;
+    text-align: center;
+    display: block;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.service_icon > .MuiSvgIcon-root {
+    font-size: 46px !important;
+    margin-left: 0 !important;
+    font-weight: 300!important;
+    color: darkslategray !important;
+}
+
+.service-card {
+    box-shadow: 0px 0px 48px 0px rgba(4, 6, 4, 0.08) !important;
+    border-radius: .8rem;
+    width: 15.7rem;
+    min-height: 15rem;
+    max-width: 100%;
+    padding: 1.6rem;
+    position: relative;
+    margin-bottom: 2.7rem;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+/*CONTACT*/
+
+.contactInfo_item {
+    line-height: 34px !important;
+    font-size: 14px !important;
+    color: #787878;
+}
+
+.contactInfo_item > span {
+    color: black;
+    font-weight: 500;
+}
+
+.contactInfo_socialsContainer {
+    margin-top: 15px;
+}
+
+.contactInfo_social > a > .MuiSvgIcon-root {
+    font-size: 16px !important;
+    margin-right: 10px;
+    color: black;
+}
+
+/*END CONTACT*/
+
+/*END SERVICES*/
+
+
