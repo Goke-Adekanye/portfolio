@@ -41,7 +41,7 @@ export default {
     {
       title: "Software Development",
       description:
-        "Over 2 years experience developing web applications both as a solo developer or in distributed teams.",
+        "Over 3 years experience developing web applications both as a solo developer or in distributed teams.",
     },
 
     {
@@ -86,101 +86,60 @@ export default {
     },
   ],
 
-  skills: [
-    {
-      title: "FRONT-END",
-      description: [
-        "ReactJS",
-        "JavaScript",
-        "TypeScript",
-        "Bootstrap",
-        "Material UI",
-      ],
-    },
-    {
-      title: "BACK-END",
-      description: ["NodeJS", "Java", "Python", "Solidity"],
-    },
-    {
-      title: "DATABASES",
-      description: ["Firebase", "Ms SQL Server", "MySQL", "MongoDB"],
-    },
-    {
-      title: "SOURCE CONTROL",
-      description: ["Git", "GitHub", "SCRUM/Agile"],
-    },
-  ],
-
   projects: [
     {
       tag: "React",
-      image: "images/portfolio.jpg",
+      image: "images/netflix1.png",
       images: [
-        "images/project.jpg",
-        "images/project.jpg",
-        "images/project.jpg",
+        "images/netflix1.png",
+        "images/netflix2.png",
+        "images/netflix3.png",
       ],
-      title: "React Project 1",
-      caption: "A short description",
-      description: "Started earnest brother believe an exposed",
+      title: "Netflix-Clone",
+      caption: "Front-End Netflix-Clone",
+      description: "React + Node + Firebase + Styled-Component + fuse.js",
       links: [
-        { link: "https://www.github.com", icon: <GitHub /> },
-        { link: "https://www.linkedin.com/", icon: <LinkedIn /> },
-        { link: "https://www.twitter.com/", icon: <Twitter /> },
+        {
+          link: "https://github.com/Goke-Adekanye/netfixclone",
+          icon: <GitHub />,
+        },
+        { link: "https://netflixclonereactweb.netlify.app", icon: <Devices /> },
       ],
     },
 
     {
       tag: "React",
-      image: "images/portfolio.jpg",
-      images: [
-        "images/project.jpg",
-        "images/project.jpg",
-        "images/project.jpg",
-      ],
-      title: "React Project 2",
-      caption: "A short description",
-      description: "Started earnest brother believe an exposed",
+      image: "images/store1.png",
+      images: ["images/store1.png", "images/store2.png", "images/store3.png"],
+      title: "E-commerce store",
+      caption: "React E-commerce store",
+      description: "React + Bootstrap + Styled-Component",
       links: [
-        { link: "https://www.github.com", icon: <GitHub /> },
-        { link: "https://www.linkedin.com/", icon: <LinkedIn /> },
-        { link: "https://www.twitter.com/", icon: <Twitter /> },
+        {
+          link: "https://github.com/Goke-Adekanye/react-online-store",
+          icon: <GitHub />,
+        },
+        { link: "https://reacttecommerce.netlify.app", icon: <Devices /> },
       ],
     },
 
     {
-      tag: "Python",
-      image: "images/portfolio.jpg",
+      tag: "Node",
+      image: "images/socialape1.png",
       images: [
-        "images/project.jpg",
-        "images/project.jpg",
-        "images/project.jpg",
+        "images/socialape1.png",
+        "images/socialape2.png",
+        "images/socialape3.png",
       ],
-      title: "Python Project 1",
-      caption: "A short description",
-      description: "Started earnest brother believe an exposed",
+      title: "Social Website",
+      caption: "React Social Website",
+      description: "React + Redux + Node + Express + Firebase + Material UI",
       links: [
-        { link: "https://www.github.com", icon: <GitHub /> },
-        { link: "https://www.linkedin.com/", icon: <LinkedIn /> },
-        { link: "https://www.twitter.com/", icon: <Twitter /> },
-      ],
-    },
-
-    {
-      tag: "Firebase",
-      image: "images/portfolio.jpg",
-      images: [
-        "images/project.jpg",
-        "images/project.jpg",
-        "images/project.jpg",
-      ],
-      title: "Firebase Project 1",
-      caption: "A short description",
-      description: "Started earnest brother believe an exposed",
-      links: [
-        { link: "https://www.github.com", icon: <GitHub /> },
-        { link: "https://www.linkedin.com/", icon: <LinkedIn /> },
-        { link: "https://www.twitter.com/", icon: <Twitter /> },
+        {
+          link: "https://github.com/Goke-Adekanye/react-social-app",
+          icon: <GitHub />,
+        },
+        { link: "https://appclown.netlify.app/", icon: <Devices /> },
       ],
     },
   ],
