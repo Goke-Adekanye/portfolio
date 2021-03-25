@@ -109,13 +109,12 @@ export default function Portfolio() {
         open={projectDialog}
         onClose={() => setProjectDialog(false)}
         className="projectDialog"
-        maxWidth={"sm"}
       >
         <DialogTitle onClose={() => setProjectDialog(false)}>
           {projectDialog.title}
         </DialogTitle>
 
-        <DialogContent style={{ height: "80vh" }}>
+        <DialogContent style={{ height: "55vh" }}>
           {projectDialog.images && (
             <ImageGallery images={projectDialog.images} />
           )}
