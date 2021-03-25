@@ -10,7 +10,7 @@ import { Grid, Icon, Paper, TextField, Typography } from "@material-ui/core";
 import TimelineItem from "@material-ui/lab/TimelineItem";
 
 import TimelineContent from "@material-ui/lab/TimelineContent";
-import { WorkRounded } from "@material-ui/icons";
+import { Settings } from "@material-ui/icons";
 import SchoolIcon from "@material-ui/icons/School";
 import CustomButton from "../../components/button";
 
@@ -44,7 +44,7 @@ export default function Resume() {
           <Grid container className="resume_timeline">
             {/*EXPERIENCES*/}
             <Grid item xs={12} md={6}>
-              <CustomTimeline title="Work History" icon={<WorkRounded />}>
+              <CustomTimeline title="Skills" icon={<Settings />}>
                 {resumeData.experiences.map((experience) => (
                   <TimelineItem>
                     <CustomTimelineSeparator />
@@ -67,7 +67,7 @@ export default function Resume() {
               </CustomTimeline>
             </Grid>
 
-            {/*EXPERIENCES*/}
+            {/*EDUCATION*/}
             <Grid item md={6}>
               <CustomTimeline title="Education History" icon={<SchoolIcon />}>
                 {resumeData.educations.map((education) => (
@@ -77,14 +77,14 @@ export default function Resume() {
                       <Typography className="timeline_title">
                         {education.title}
                       </Typography>
-                      <Typography variant="caption" className="timeline_date">
-                        {education.date}
-                      </Typography>
                       <Typography
                         variant="body2"
                         className="timeline_description"
                       >
                         {education.description}
+                      </Typography>
+                      <Typography variant="caption" className="timeline_date">
+                        {education.date}
                       </Typography>
                     </TimelineContent>
                   </TimelineItem>
@@ -164,7 +164,7 @@ export default function Resume() {
               <Grid container>
                 <Grid item>
                   <Typography className="contactInfo_item">
-                    <span>Address:</span> {resumeData.address}
+                    <span>Location:</span> {resumeData.location}
                   </Typography>
                   <Typography className="contactInfo_item">
                     <span>Phone:</span> {resumeData.phone}
