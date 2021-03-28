@@ -177,10 +177,10 @@ class Resume extends Component {
                   method="POST"
                   action="/"
                   data-netlify="true"
-                  data-netlify-honeypot="bot-field"
                   onSubmit={this.handleSubmit}
                 >
                   <Grid container spacing={3}>
+                    <input type="hidden" name="form-name" value="contact" />
                     <Grid item xs={12} sm={6}>
                       <TextField
                         fullWidth
