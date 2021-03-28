@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-no-target-blank */
 /* eslint-disable react/jsx-no-comment-textnodes */
-import React from "react";
+import React, { useState } from "react";
 import "./styles/resume.css";
 import resumeData from "../../utils/resumeData";
 import CustomTimeline, {
@@ -15,6 +15,11 @@ import SchoolIcon from "@material-ui/icons/School";
 import CustomButton from "../../components/button";
 
 export default function Resume() {
+  const [name, setName] = useState("");
+  const [emailAddress, setEmailAddress] = useState("");
+  const [message, setMessage] = useState("");
+
+  const isInvalid = name === "" || emailAddress === "" || message === "";
   return (
     <>
       {/* ABOUT ME */}
@@ -132,20 +137,41 @@ export default function Resume() {
             </Grid>
 
             <Grid item xs={12}>
-              <Grid container spacing={3}>
-                <Grid item xs={12} sm={6}>
-                  <TextField fullWidth name="name" label="Name" />
+              <form action="POST" data-netlify="true">
+                <Grid container spacing={3}>
+                  <Grid item xs={12} sm={6}>
+                    <TextField
+                      fullWidth
+                      name="name"
+                      label="Name"
+                      value={name}
+                      onChange={({ target }) => setName(target.value)}
+                    />
+                  </Grid>
+                  <Grid item xs={12} sm={6}>
+                    <TextField
+                      fullWidth
+                      name="email"
+                      label="E-mail"
+                      value={emailAddress}
+                      onChange={({ target }) => setEmailAddress(target.value)}
+                    />
+                  </Grid>
+                  <Grid item xs={12}>
+                    <TextField
+                      fullWidth
+                      label="Message"
+                      value={message}
+                      onChange={({ target }) => setMessage(target.value)}
+                      multiline
+                      rows={4}
+                    />
+                  </Grid>
+                  <Grid item xs={12}>
+                    <CustomButton text={"Submit"} disabled={isInvalid} />
+                  </Grid>
                 </Grid>
-                <Grid item xs={12} sm={6}>
-                  <TextField fullWidth name="email" label="E-mail" />
-                </Grid>
-                <Grid item xs={12}>
-                  <TextField fullWidth label="Message" multiline rows={4} />
-                </Grid>
-                <Grid item xs={12}>
-                  <CustomButton text={"Submit"} />
-                </Grid>
-              </Grid>
+              </form>
             </Grid>
           </Grid>
         </Grid>
