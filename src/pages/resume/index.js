@@ -14,10 +14,28 @@ import { Settings } from "@material-ui/icons";
 import SchoolIcon from "@material-ui/icons/School";
 import CustomButton from "../../components/button";
 
+const encode = (data) => {
+  return Object.keys(data)
+    .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&");
+};
+
 export default function Resume() {
   const [name, setName] = useState("");
   const [emailAddress, setEmailAddress] = useState("");
   const [message, setMessage] = useState("");
+
+  const handleSubmit = (event) => {
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", name, emailAddress, message }),
+    })
+      .then(() => alert("Success!"))
+      .catch((error) => alert(error));
+
+    event.preventDefault();
+  };
 
   const isInvalid = name === "" || emailAddress === "" || message === "";
   return (
@@ -137,11 +155,12 @@ export default function Resume() {
             </Grid>
 
             <Grid item xs={12}>
-              <form action="POST" data-netlify="true">
+              <form name="contact" onSubmit={handleSubmit}>
                 <Grid container spacing={3}>
                   <Grid item xs={12} sm={6}>
                     <TextField
                       fullWidth
+                      type="text"
                       name="name"
                       label="Name"
                       value={name}
@@ -151,6 +170,7 @@ export default function Resume() {
                   <Grid item xs={12} sm={6}>
                     <TextField
                       fullWidth
+                      type="email"
                       name="email"
                       label="E-mail"
                       value={emailAddress}
@@ -160,6 +180,7 @@ export default function Resume() {
                   <Grid item xs={12}>
                     <TextField
                       fullWidth
+                      type="text"
                       label="Message"
                       value={message}
                       onChange={({ target }) => setMessage(target.value)}
