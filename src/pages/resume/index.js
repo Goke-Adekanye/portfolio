@@ -28,6 +28,7 @@ class Resume extends Component {
       name: "",
       email: "",
       message: "",
+      success: "",
     };
   }
 
@@ -44,7 +45,9 @@ class Resume extends Component {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "contact", ...this.state }),
     })
-      .then(() => alert("Success!"))
+      .then(() => {
+        this.setState({ success: true, name: "", email: "", message: "" });
+      })
       .catch((error) => alert(error));
 
     event.preventDefault();
@@ -53,8 +56,11 @@ class Resume extends Component {
   render() {
     const isInvalid =
       this.state.name === "" ||
-      this.state.emailAddress === "" ||
+      this.state.email === "" ||
       this.state.message === "";
+
+    //destructuring to get the needed items from this.state
+    const { success } = this.state;
     return (
       <>
         {/* ABOUT ME */}
@@ -172,6 +178,9 @@ class Resume extends Component {
               </Grid>
 
               <Grid item xs={12}>
+                {success && (
+                  <p style={{ color: "green" }}>Thanks for your message! </p>
+                )}
                 <form
                   name="contact"
                   method="POST"
@@ -197,7 +206,7 @@ class Resume extends Component {
                         type="email"
                         name="email"
                         label="E-mail"
-                        value={this.state.emailAddress}
+                        value={this.state.email}
                         onChange={this.handleChange}
                       />
                     </Grid>
