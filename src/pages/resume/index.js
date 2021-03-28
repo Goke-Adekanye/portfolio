@@ -168,7 +168,11 @@ export default function Resume() {
                     />
                   </Grid>
                   <Grid item xs={12}>
-                    <CustomButton text={"Submit"} disabled={isInvalid} />
+                    <CustomButton
+                      type={"submit"}
+                      text={"Submit"}
+                      disabled={isInvalid}
+                    />
                   </Grid>
                 </Grid>
               </form>
