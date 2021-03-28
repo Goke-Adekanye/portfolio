@@ -138,39 +138,32 @@ export default function Resume() {
 
             <Grid item xs={12}>
               <form action="POST" data-netlify="true">
-                <Grid container spacing={3}>
-                  <Grid item xs={12} sm={6}>
-                    <TextField
-                      fullWidth
-                      name="name"
-                      label="Name"
-                      value={name}
-                      onChange={({ target }) => setName(target.value)}
-                    />
-                  </Grid>
-                  <Grid item xs={12} sm={6}>
-                    <TextField
-                      fullWidth
-                      name="email"
-                      label="E-mail"
-                      value={emailAddress}
-                      onChange={({ target }) => setEmailAddress(target.value)}
-                    />
-                  </Grid>
-                  <Grid item xs={12}>
-                    <TextField
-                      fullWidth
-                      label="Message"
-                      value={message}
-                      onChange={({ target }) => setMessage(target.value)}
-                      multiline
-                      rows={4}
-                    />
-                  </Grid>
-                  <Grid item xs={12}>
-                    <CustomButton text={"Submit"} disabled={isInvalid} />
-                  </Grid>
-                </Grid>
+                <TextField
+                  fullWidth
+                  name="name"
+                  label="Name"
+                  value={name}
+                  onChange={({ target }) => setName(target.value)}
+                />
+
+                <TextField
+                  fullWidth
+                  name="email"
+                  label="E-mail"
+                  value={emailAddress}
+                  onChange={({ target }) => setEmailAddress(target.value)}
+                />
+
+                <TextField
+                  fullWidth
+                  label="Message"
+                  value={message}
+                  onChange={({ target }) => setMessage(target.value)}
+                  multiline
+                  rows={4}
+                />
+
+                <CustomButton text={"Submit"} disabled={isInvalid} />
               </form>
             </Grid>
           </Grid>
