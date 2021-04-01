@@ -53,3 +53,7 @@
     margin-right: 12px;
     color: black;
 }
+
+.header .header_right > a {
+    text-decoration: none;
+}

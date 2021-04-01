@@ -55,7 +55,12 @@ export default function Profile() {
           ))}
         </CustomTimeline>
         <div className="button_container">
-          <CustomButton text={"Download Cv"} icon={<GetAppIcon />} />
+          <a
+            href="https://drive.google.com/file/d/1kgOGxJlCK0xLsjoM_OU-ENnEflUN5oWa/edit?usp=sharing"
+            target="_blank"
+          >
+            <CustomButton text={"Download Cv"} icon={<GetAppIcon />} />
+          </a>
         </div>
       </div>
     </div>

@@ -81,7 +81,7 @@ export default {
     {
       title: "Hosting",
       description:
-        "After implemntation, i make websites accessible through hosting. I ensure they are safe and secure with SSL verification.",
+        "After implementation, I make websites accessible through hosting. I ensure they are safe and secure with SSL verification.",
       icon: <Language />,
     },
   ],

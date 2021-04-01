@@ -52,7 +52,14 @@ function Header(props) {
             </a>
           ))}
 
-          <CustomButton text={"Hire Me"} icon={<Telegram />} />
+          {/* eslint-disable-next-line react/jsx-no-target-blank*/}
+          <a
+            href="https://wa.me/2348068350106"
+            target="_blank"
+            rel="nonreferrer"
+          >
+            <CustomButton text={"Hire Me"} icon={<Telegram />} />
+          </a>
         </div>
       </Navbar.Collapse>
     </Navbar>
