@@ -56,7 +56,7 @@ export default function Profile() {
         </CustomTimeline>
         <div className="button_container">
           <a
-            href="https://drive.google.com/file/d/1kgOGxJlCK0xLsjoM_OU-ENnEflUN5oWa/edit?usp=sharing"
+            href="https://drive.google.com/file/d/1RnfyyGlpigZDantQisM3V4ClZPZECmbU/edit?usp=sharing"
             target="_blank"
           >
             <CustomButton text={"Download Cv"} icon={<GetAppIcon />} />
