@@ -88,6 +88,25 @@ export default {
 
   projects: [
     {
+      tag: "Node",
+      image: "images/mart1.png",
+      images: ["images/mart1.png", "images/mart2.png", "images/mart3.png"],
+      title: "E-commerce website",
+      caption: "MERN Stack",
+      description: "React + Node + MongoDB + Heroku",
+      links: [
+        {
+          link: "https://github.com/Goke-Adekanye/halimart-fullstack",
+          icon: <GitHub />,
+        },
+        {
+          link: "https://ancient-shelf-94872.herokuapp.com",
+          icon: <Devices />,
+        },
+      ],
+    },
+
+    {
       tag: "React",
       image: "images/netflix1.png",
       images: [
