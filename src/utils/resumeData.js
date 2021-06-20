@@ -6,6 +6,7 @@ import {
   WebOutlined,
   Devices,
   Language,
+  Assignment,
 } from "@material-ui/icons";
 
 // eslint-disable-next-line import/no-anonymous-default-export
@@ -31,6 +32,11 @@ export default {
       link: "https://twitter.com/Jvstblvck",
       text: "Jvstblvck",
       icon: <Twitter />,
+    },
+    Medium: {
+      link: "https://gokeadekanye.medium.com",
+      text: "Jvstblvck",
+      icon: <Assignment />,
     },
   },
 
