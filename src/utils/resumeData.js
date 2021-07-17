@@ -41,8 +41,7 @@ export default {
   },
 
   about:
-    "Experienced Software Engineer with Javascript as my primary language using the react framework. Skilled in HTML, CSS, Bootstrap, Node.js, React, and Redux. As a developer, I have experience in building modern reusable Javascript modules, I also have experience building backend RESTful APIs (Node + Express) backed by NoSQL databases, and consuming them with React client-side web applications. \n\n With a relentless desire to improve myself and my team, I flourish when working alone or in teams. My academic background made me appreciate and develop an interest in recognizing real-life problems and develop solutions for them.",
-
+    "Hello, I’m Goke Adekanye, a professional Frontend Web Developer based in Lagos State, Nigeria. As a graduate of Computer Science (BSc.), I am passionate about leveraging my solid background in Information Technology to decipher challenging problems and create innovative solutions that contribute positively to the IT ecosystem.Being an inquisitive individual, I am constantly exploring the latest technologies that empower me to discover new and better ways to do things. I am independent, innovative, full of energy, and highly motivational. Not only am I well organized, but I am also a team player with enthusiasm for reaching completion stages and finishing tasks at hand. I collaborate effectively to implement and transform ideas into finished products. Due to my work demands, I enjoy traveling, but I also work remotely. I sometimes work alone, but I also collaborate with other professionals or tech companies for Outsourced Projects and Partnerships. I’m a Goal-Oriented individual with excellent communication skills coupled with strategic thinking, Time Keeping, and Project Management.",
   experiences: [
     {
       title: "Software Development",
