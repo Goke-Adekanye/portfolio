@@ -50,7 +50,7 @@ export default {
     },
 
     {
-      title: "Leadership",
+      title: "Skills",
       description:
         "Strong leadership skills, Leading teams of 5 - 8 developers",
     },
@@ -98,7 +98,7 @@ export default {
       images: ["images/mart1.png", "images/mart2.png", "images/mart3.png"],
       title: "E-commerce website",
       caption: "MERN Stack",
-      description: "React + Node + MongoDB + Heroku",
+      description: "React + Node(Express) + MongoDB + Heroku",
       links: [
         {
           link: "https://github.com/Goke-Adekanye/halimart-fullstack",
